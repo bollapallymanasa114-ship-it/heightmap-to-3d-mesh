@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Viewer with Camera Controls - Day 5</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial; background: #1a1a1a; color: #fff; }
+        #canvas { width: 100%; height: 100vh; display: block; }
+        #controls { position: absolute; bottom: 20px; left: 20px; background: rgba(0,0,0,0.7); padding: 15px; border-radius: 8px; }
+        button { background: #0066cc; color: white; border: none; padding: 10px 15px; margin: 5px; cursor: pointer; border-radius: 4px; }
+        button:hover { background: #0052a3; }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <div id="controls">
+        <h3>Camera Presets</h3>
+        <button onclick="alert('Overview')">Overview</button>
+        <button onclick="alert('Top Down')">Top Down</button>
+        <button onclick="alert('Side View')">Side View</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="day5_camera_controls.js"></script>
+</body>
+</html>
